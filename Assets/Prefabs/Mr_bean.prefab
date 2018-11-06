@@ -9,50 +9,50 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1729841471397568}
+  m_RootGameObject: {fileID: 1854738696522720}
   m_IsPrefabParent: 1
---- !u!1 &1729841471397568
+--- !u!1 &1854738696522720
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4112106678719562}
-  - component: {fileID: 212532548833254168}
-  - component: {fileID: 58802029683354994}
-  - component: {fileID: 114400133786951326}
-  - component: {fileID: 114509067733750024}
-  - component: {fileID: 114290204233729388}
-  - component: {fileID: 114236243821976736}
-  - component: {fileID: 114831052574880024}
-  - component: {fileID: 114592596788832690}
-  m_Layer: 9
-  m_Name: Zombie
+  - component: {fileID: 4916799722062762}
+  - component: {fileID: 212918620822882396}
+  - component: {fileID: 58514897029653702}
+  - component: {fileID: 114476699685454570}
+  - component: {fileID: 114107673890805530}
+  - component: {fileID: 114045492611060430}
+  - component: {fileID: 114334004596862880}
+  - component: {fileID: 114814662475923686}
+  - component: {fileID: 114439486037832964}
+  m_Layer: 0
+  m_Name: Mr_bean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4112106678719562
+--- !u!4 &4916799722062762
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
+  m_GameObject: {fileID: 1854738696522720}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.44, y: 0.03, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.934, y: -2.021, z: 0}
+  m_LocalScale: {x: 0.23986965, y: 0.2526215, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &58802029683354994
+--- !u!58 &58514897029653702
 CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
+  m_GameObject: {fileID: 1854738696522720}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -61,38 +61,89 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.55}
   serializedVersion: 2
-  m_Radius: 0.55
---- !u!114 &114236243821976736
+  m_Radius: 1.6
+--- !u!114 &114045492611060430
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
+  m_GameObject: {fileID: 1854738696522720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e00dc0946da3d0345a80ed08a9f1d450, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onSpawn:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114439486037832964}
+        m_MethodName: SetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114814662475923686}
+        m_MethodName: SetTarget
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!114 &114107673890805530
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854738696522720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1122c664b33072942bc7b7763f2e9e48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 1943842712713022, guid: 66960f54c348153418c04bca49ab1765,
+    type: 2}
+  adjustmentAngle: 0
+--- !u!114 &114334004596862880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854738696522720}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f4f1b2887b5c434c9bdb61c4b2f949c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114290204233729388
+--- !u!114 &114439486037832964
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
+  m_GameObject: {fileID: 1854738696522720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a56690b879d2744192e061699518cc7, type: 3}
+  m_Script: {fileID: 11500000, guid: 758519ae016f55d4a994739eed3acfbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  smoothing: 5
-  adjustmentAngle: 0
---- !u!114 &114400133786951326
+  speed: 5
+--- !u!114 &114476699685454570
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
+  m_GameObject: {fileID: 1854738696522720}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd55178ad9169314ca7088683d61c588, type: 3}
@@ -102,7 +153,7 @@ MonoBehaviour:
   onDie:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114236243821976736}
+      - m_Target: {fileID: 114334004596862880}
         m_MethodName: Die
         m_Mode: 1
         m_Arguments:
@@ -113,7 +164,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114831052574880024}
+      - m_Target: {fileID: 114107673890805530}
         m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
@@ -131,77 +182,26 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: HealthSystem+OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!114 &114509067733750024
+--- !u!114 &114814662475923686
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
+  m_GameObject: {fileID: 1854738696522720}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 758519ae016f55d4a994739eed3acfbd, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a56690b879d2744192e061699518cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 5
---- !u!114 &114592596788832690
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e00dc0946da3d0345a80ed08a9f1d450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  onSpawn:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114509067733750024}
-        m_MethodName: SetTarget
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114290204233729388}
-        m_MethodName: SetTarget
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
---- !u!114 &114831052574880024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1122c664b33072942bc7b7763f2e9e48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 1943842712713022, guid: 66960f54c348153418c04bca49ab1765,
-    type: 2}
+  smoothing: 5
   adjustmentAngle: 0
---- !u!212 &212532548833254168
+--- !u!212 &212918620822882396
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
+  m_GameObject: {fileID: 1854738696522720}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -231,12 +231,12 @@ SpriteRenderer:
   m_SortingLayerID: 800181705
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9943b6fb4aedb0d4d9e0991c8d679fd5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d387a819b03163844812be08c50bbf41, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 5.09, y: 5.41}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
