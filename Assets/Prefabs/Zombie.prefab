@@ -21,14 +21,32 @@ GameObject:
   - component: {fileID: 4112106678719562}
   - component: {fileID: 212532548833254168}
   - component: {fileID: 58802029683354994}
-  - component: {fileID: 114400133786951326}
   - component: {fileID: 114509067733750024}
   - component: {fileID: 114290204233729388}
   - component: {fileID: 114236243821976736}
-  - component: {fileID: 114831052574880024}
   - component: {fileID: 114592596788832690}
+  - component: {fileID: 114026675566344484}
+  - component: {fileID: 114058492876758956}
+  - component: {fileID: 114273682196986702}
   m_Layer: 9
   m_Name: Zombie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1981943394626668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4283973717765234}
+  - component: {fileID: 114063228524568084}
+  - component: {fileID: 58501965732517724}
+  m_Layer: 11
+  m_Name: Hurt Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,10 +61,39 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.44, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4283973717765234}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4283973717765234
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981943394626668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4112106678719562}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58501965732517724
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981943394626668}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!58 &58802029683354994
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -62,7 +109,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.55}
   serializedVersion: 2
   m_Radius: 0.55
---- !u!114 &114236243821976736
+--- !u!114 &114026675566344484
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -70,24 +117,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1729841471397568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f4f1b2887b5c434c9bdb61c4b2f949c, type: 3}
+  m_Script: {fileID: 11500000, guid: f5aa71d03a74a4044a131a39cd129c0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114290204233729388
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a56690b879d2744192e061699518cc7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  smoothing: 5
-  adjustmentAngle: 0
---- !u!114 &114400133786951326
+  score: 10
+--- !u!114 &114058492876758956
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -113,7 +147,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 114831052574880024}
+      - m_Target: {fileID: 0}
         m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
@@ -131,6 +165,58 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: HealthSystem+OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &114063228524568084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1981943394626668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 989641283df40a542901ea92cd8e005c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  resetTime: 0.25
+--- !u!114 &114236243821976736
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729841471397568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f4f1b2887b5c434c9bdb61c4b2f949c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114273682196986702
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729841471397568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1122c664b33072942bc7b7763f2e9e48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabToSpawn: {fileID: 1943842712713022, guid: 66960f54c348153418c04bca49ab1765,
+    type: 2}
+  adjustmentAngle: 0
+--- !u!114 &114290204233729388
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1729841471397568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a56690b879d2744192e061699518cc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  smoothing: 5
+  adjustmentAngle: 0
 --- !u!114 &114509067733750024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,20 +268,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: EnemySpawnedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
---- !u!114 &114831052574880024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1729841471397568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1122c664b33072942bc7b7763f2e9e48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 1943842712713022, guid: 66960f54c348153418c04bca49ab1765,
-    type: 2}
-  adjustmentAngle: 0
 --- !u!212 &212532548833254168
 SpriteRenderer:
   m_ObjectHideFlags: 1

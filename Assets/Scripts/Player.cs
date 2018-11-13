@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+    public delegate void UpdateHealth(int newHealth);
+    public static event UpdateHealth OnUpdateHealth;
+
     private Animator gunAnim;
 
     private void Start()
@@ -12,12 +15,6 @@ public class Player : MonoBehaviour {
 
     }
 
-	// Use this for initialization
-	//void Start () {
-		
-	//}
-	
-	// Update is called once per frame
 	void Update () {
         if (Input.GetMouseButton(0))
         {
@@ -30,4 +27,10 @@ public class Player : MonoBehaviour {
 
 		
 	}
+    public void SendHealthData(int health) {
+        if (OnUpdateHealth != null)
+            OnUpdateHealth(health);
+    
+
+    }
 }
