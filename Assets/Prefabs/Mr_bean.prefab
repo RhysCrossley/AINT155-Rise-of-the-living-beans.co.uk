@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 758519ae016f55d4a994739eed3acfbd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 4693492931391964, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
   speed: 5
 --- !u!114 &114476699685454570
 MonoBehaviour:
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a56690b879d2744192e061699518cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 4693492931391964, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
   smoothing: 5
   adjustmentAngle: 0
 --- !u!212 &212918620822882396
