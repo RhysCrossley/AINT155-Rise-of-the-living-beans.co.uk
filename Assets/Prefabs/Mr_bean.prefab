@@ -234,7 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87027600518d11941afefd28b19ab2fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 4693492931391964, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
   smoothing: 5
 --- !u!114 &114338821416178512
 MonoBehaviour:

@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114111027963288520}
   - component: {fileID: 114588502678290500}
   - component: {fileID: 50234376090901560}
+  - component: {fileID: 58316730208048098}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -67,6 +68,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &58316730208048098
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1717207177405692}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1
 --- !u!114 &114111027963288520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -78,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1122c664b33072942bc7b7763f2e9e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 1854738696522720, guid: 375cf1c2044d37d47a8d434311d85bfd,
+  prefabToSpawn: {fileID: 1555790870748610, guid: 375cf1c2044d37d47a8d434311d85bfd,
     type: 2}
   adjustmentAngle: 0
 --- !u!114 &114360762096651868
