@@ -9,23 +9,23 @@ public class Player : MonoBehaviour {
 
     public bool isFiring = false;
 
-    private Animator gunAnim;
+    //private Animator gunAnim;
 
     private void Start()
     {
-        gunAnim = GetComponent<Animator>();
+        //gunAnim = GetComponent<Animator>();
 
     }
 
 	void Update () {
-        if (Input.GetMouseButton(0))
-        {
-            gunAnim.SetBool("isFiring", true);
-        }
-        else
-        {
-            gunAnim.SetBool("isFiring", false);
-        }
+        //if (Input.GetMouseButton(0))
+        //{
+        //    gunAnim.SetBool("isFiring", true);
+        //}
+        //else
+        //{
+        //    gunAnim.SetBool("isFiring", false);
+        //}
 
 		
 	}
