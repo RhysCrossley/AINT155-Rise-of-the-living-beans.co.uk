@@ -7,6 +7,8 @@ public class Player : MonoBehaviour {
     public delegate void UpdateHealth(int newHealth);
     public static event UpdateHealth OnUpdateHealth;
 
+    public bool isFiring = false;
+
     private Animator gunAnim;
 
     private void Start()
