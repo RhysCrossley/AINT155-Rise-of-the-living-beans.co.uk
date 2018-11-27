@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Audiofordeath : MonoBehaviour {
+public class Audiofordeath : MonoBehaviour
+{
 
-    
-
-	void OnDisable ()
+    void OnDisable ()
     {
-        GetComponent<AudioSource>().Play();
+      GetComponent<AudioSource>().Play();
 	}
 
-    private void Sound()
+    public void Sound()
     {
         
     }
