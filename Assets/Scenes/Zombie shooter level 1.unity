@@ -198,6 +198,7 @@ Prefab:
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 114750980293945456, guid: d2a065c04b373a94ca0ffd7983328ca5,
         type: 2}
       propertyPath: speed
@@ -205,6 +206,8 @@ Prefab:
       objectReference: {fileID: 0}
 =======
 >>>>>>> parent of 9bb4a16... Fixed bugs, added bullets to weapon spawns
+=======
+>>>>>>> parent of a530900... Updates to player
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
   m_IsPrefabParent: 0
@@ -3408,7 +3411,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1717207177405692, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
@@ -3568,7 +3571,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1717207177405692, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
@@ -3686,7 +3689,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1717207177405692, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
@@ -3840,7 +3843,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1717207177405692, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
