@@ -157,6 +157,11 @@ Prefab:
       propertyPath: theCamera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 114145025058487268, guid: d2a065c04b373a94ca0ffd7983328ca5,
+        type: 2}
+      propertyPath: bulletSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 1393903394}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
   m_IsPrefabParent: 0
@@ -3525,6 +3530,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4dd98656caebe7f4fb73116b613a0a1c, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1393903394 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4064908192280300, guid: d2a065c04b373a94ca0ffd7983328ca5,
+    type: 2}
+  m_PrefabInternal: {fileID: 18597327}
 --- !u!1 &1627404369
 GameObject:
   m_ObjectHideFlags: 0

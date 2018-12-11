@@ -89,7 +89,7 @@ public class WeaponManager : MonoBehaviour
                      * here, we will use SetActive to deactivate the weapon's GameObject
                      * see link: https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
                      */
-                    transform.GetChild(i).gameObject.SetActive(false);
+                    transform.GetChild(i).gameObject.SetActive(true);
                 }
             }
         }
