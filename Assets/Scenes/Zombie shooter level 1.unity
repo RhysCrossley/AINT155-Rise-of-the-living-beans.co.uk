@@ -157,7 +157,6 @@ Prefab:
       propertyPath: theCamera
       value: 
       objectReference: {fileID: 519420031}
-<<<<<<< HEAD
     - target: {fileID: 1881756656336020, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
       propertyPath: m_Icon
       value: 
@@ -203,8 +202,6 @@ Prefab:
       propertyPath: speed
       value: 8
       objectReference: {fileID: 0}
-=======
->>>>>>> parent of 9bb4a16... Fixed bugs, added bullets to weapon spawns
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
   m_IsPrefabParent: 0
@@ -640,6 +637,11 @@ Prefab:
       propertyPath: onDamaged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 58887122972116692, guid: 375cf1c2044d37d47a8d434311d85bfd,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 375cf1c2044d37d47a8d434311d85bfd, type: 2}
   m_IsPrefabParent: 0
@@ -813,6 +815,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &927318873 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4064908192280300, guid: d2a065c04b373a94ca0ffd7983328ca5,
+    type: 2}
+  m_PrefabInternal: {fileID: 18597327}
 --- !u!1001 &1147792507
 Prefab:
   m_ObjectHideFlags: 0
