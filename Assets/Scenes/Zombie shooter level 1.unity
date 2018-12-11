@@ -157,57 +157,6 @@ Prefab:
       propertyPath: theCamera
       value: 
       objectReference: {fileID: 519420031}
-<<<<<<< HEAD
-    - target: {fileID: 1881756656336020, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
-      propertyPath: m_Icon
-      value: 
-      objectReference: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000,
-        type: 0}
-    - target: {fileID: 114145025058487268, guid: d2a065c04b373a94ca0ffd7983328ca5,
-        type: 2}
-      propertyPath: bulletSpawn.Array.data[0]
-      value: 
-      objectReference: {fileID: 927318873}
-    - target: {fileID: 4064908192280300, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.8940551
-      objectReference: {fileID: 0}
-    - target: {fileID: 4064908192280300, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.2701646
-      objectReference: {fileID: 0}
-    - target: {fileID: 4064908192280300, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.8940554
-      objectReference: {fileID: 0}
-    - target: {fileID: 4064908192280300, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 4064908192280300, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.612
-      objectReference: {fileID: 0}
-    - target: {fileID: 212807657532329868, guid: d2a065c04b373a94ca0ffd7983328ca5,
-        type: 2}
-      propertyPath: m_SortingLayerID
-      value: -1504679059
-      objectReference: {fileID: 0}
-    - target: {fileID: 212807657532329868, guid: d2a065c04b373a94ca0ffd7983328ca5,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-<<<<<<< HEAD
-    - target: {fileID: 114750980293945456, guid: d2a065c04b373a94ca0ffd7983328ca5,
-        type: 2}
-      propertyPath: speed
-      value: 8
-      objectReference: {fileID: 0}
-=======
->>>>>>> parent of 9bb4a16... Fixed bugs, added bullets to weapon spawns
-=======
->>>>>>> parent of a530900... Updates to player
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d2a065c04b373a94ca0ffd7983328ca5, type: 2}
   m_IsPrefabParent: 0

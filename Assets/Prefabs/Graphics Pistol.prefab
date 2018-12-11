@@ -472,31 +472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1605728161363452, guid: 33807560fc088a54281fe1c20802092d,
     type: 2}
-<<<<<<< HEAD
-  bulletSpawn:
-<<<<<<< HEAD
-  - {fileID: 4888947426699830}
-  fireTime: 0.5
---- !u!114 &114880755387113394
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1179919958843712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5754aff25b55e6a43bf48a2a4829fa3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 1605728161363452, guid: 33807560fc088a54281fe1c20802092d,
-    type: 2}
-  bulletSpawn: []
-=======
   bulletSpawn: {fileID: 4948447162011842}
->>>>>>> parent of 9bb4a16... Fixed bugs, added bullets to weapon spawns
-=======
-  - {fileID: 4948447162011842}
->>>>>>> parent of a530900... Updates to player
   fireTime: 0.5
 --- !u!212 &212003161025919114
 SpriteRenderer:
