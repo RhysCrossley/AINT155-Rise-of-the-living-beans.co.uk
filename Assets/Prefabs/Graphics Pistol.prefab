@@ -532,6 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 1605728161363452, guid: 33807560fc088a54281fe1c20802092d,
     type: 2}
+<<<<<<< HEAD
   bulletSpawn:
   - {fileID: 4888947426699830}
   fireTime: 0.5
@@ -549,6 +550,9 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1605728161363452, guid: 33807560fc088a54281fe1c20802092d,
     type: 2}
   bulletSpawn: []
+=======
+  bulletSpawn: {fileID: 4948447162011842}
+>>>>>>> parent of 9bb4a16... Fixed bugs, added bullets to weapon spawns
   fireTime: 0.5
 --- !u!212 &212003161025919114
 SpriteRenderer:
