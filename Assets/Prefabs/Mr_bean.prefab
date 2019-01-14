@@ -105,8 +105,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555790870748610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.89, y: 13.64, z: 0}
-  m_LocalScale: {x: 1.5039858, y: 1.5839419, z: 6.270021}
+  m_LocalPosition: {x: 17.940277, y: 3.486273, z: 0}
+  m_LocalScale: {x: 0.27117378, y: 0.28559014, z: 1.1305063}
   m_Children:
   - {fileID: 4692567873243186}
   - {fileID: 4059230279093142}
@@ -142,7 +142,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 5
+  m_Radius: 20
 --- !u!58 &58887122972116692
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -365,7 +365,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   onDamaged:
