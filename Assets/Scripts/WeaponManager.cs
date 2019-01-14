@@ -32,6 +32,8 @@
 using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
+
+
 {
     /*
      * START
@@ -89,7 +91,7 @@ public class WeaponManager : MonoBehaviour
                      * here, we will use SetActive to deactivate the weapon's GameObject
                      * see link: https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html
                      */
-                    transform.GetChild(i).gameObject.SetActive(true);
+                    transform.GetChild(i).gameObject.SetActive(false);
                 }
             }
         }
@@ -111,7 +113,6 @@ public class WeaponManager : MonoBehaviour
          * see link: https://docs.unity3d.com/ScriptReference/Object.Instantiate.html
          */
         GameObject weapon = Instantiate(prefab, transform.position, transform.rotation, transform);
-
         /*
          * CHANGE WEAPON TO THE NEW WEAPON
          * here, we get the current sibling index of the new weapon (where the weapon is in the Hierachy)
@@ -162,4 +163,14 @@ public class WeaponManager : MonoBehaviour
             ChangeWeapon(2); // change to weapon 2
         }
     }
+
+
+    //Failed experiment
+
+    //public GameObject Player;
+
+    //void Awake()
+    //{
+    //    Destroy(Player);
+    //}
 }

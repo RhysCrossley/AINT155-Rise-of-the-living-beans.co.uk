@@ -27,7 +27,6 @@ public class WeaponPickup : MonoBehaviour
      */ 
     public GameObject weaponPrefab;
 
-
     /*
      * OnTriggerEnter2D
      * see link: https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerEnter2D.html
