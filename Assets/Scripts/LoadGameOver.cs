@@ -9,5 +9,12 @@ public class LoadGameOver : MonoBehaviour {
     {
         SceneManager.LoadScene("Game over");
     }
-
+    public void Level2()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
+    public void GoodEnd()
+    {
+        SceneManager.LoadScene("Good Game Over");
+    }
 }
